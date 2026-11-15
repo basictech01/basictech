@@ -5,6 +5,7 @@ import { Services } from '../components/Services';
 import { Differentiation } from '../components/Differentiation';
 import { Process } from '../components/Process';
 import { Regions } from '../components/Regions';
+import { Clients } from '../components/Clients';
 import { ProductsSection } from '../components/ProductsSection';
 import { AISection } from '../components/AISection';
 import { Seo } from '../components/Seo';
@@ -25,6 +26,7 @@ const Home: React.FC = () => {
       <Differentiation />
       <Process />
       <Regions />
+      <Clients />
       <ProductsSection />
       <AISection />
     </>
