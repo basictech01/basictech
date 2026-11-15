@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { PILLARS } from '../constants';
 import { Reveal } from './ui/Reveal';
-import { Brain, Bot, Settings } from 'lucide-react';
+import { Users, Handshake, ShieldCheck } from 'lucide-react';
 
 const IconMap: any = {
-  Brain: Brain,
-  Bot: Bot,
-  Settings: Settings
+  Users,
+  Handshake,
+  ShieldCheck
 };
 
 export const Differentiation: React.FC = () => {
@@ -20,6 +20,11 @@ export const Differentiation: React.FC = () => {
         <div className="mb-20">
           <Reveal>
              <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight leading-tight">Why We're Different</h2>
+          </Reveal>
+          <Reveal delay={0.35}>
+             <p className="text-slate-600 text-lg font-light leading-relaxed max-w-2xl">
+               Three commitments every client gets from a Basic Tech forward-deployed team.
+             </p>
           </Reveal>
         </div>
 

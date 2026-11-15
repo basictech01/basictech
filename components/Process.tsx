@@ -13,11 +13,11 @@ export const Process: React.FC = () => {
           <div className="lg:w-1/3">
             <div className="sticky top-32">
               <Reveal>
-                <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight leading-tight">How We Build</h2>
+                <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight leading-tight">How We Work</h2>
               </Reveal>
               <Reveal delay={0.4}>
                 <p className="text-slate-600 text-lg font-light leading-relaxed">
-                  A clear, engineering-led software development process designed for speed, quality, and precision.
+                  We're an FDE-led AI engineering company. Every engagement follows the same loop — from embedding with your team to proving the business impact. What we learn along the way becomes products every client benefits from.
                 </p>
               </Reveal>
               {/* Decorative vertical line */}

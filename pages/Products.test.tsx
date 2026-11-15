@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, within } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { ContactProvider, useContact } from '../components/layout/ContactContext'
 import Products from './Products'
@@ -36,6 +36,20 @@ describe('Products', () => {
       'href',
       'https://play.google.com/store/apps/details?id=in.uniun.app&hl=en_IN',
     )
+  })
+
+  it('lists client-proven products with a "Talk to us" enquiry CTA', () => {
+    renderPage()
+    const grid = screen.getByTestId('product-grid')
+    for (const name of ['Searchex', 'Custom Chatbots', 'Demand Forecasting', 'Payroll Studio', 'Inventory Management']) {
+      expect(within(grid).getByRole('heading', { level: 3, name })).toBeInTheDocument()
+    }
+    expect(within(grid).getByRole('link', { name: 'Hetvi Lifesciences Pvt Ltd' })).toHaveAttribute('href', 'https://hetvipharma.com/')
+    expect(within(grid).getAllByText('Gopi Steels')).toHaveLength(2)
+    const caseStudyHrefs = within(grid).getAllByRole('link', { name: /case study/i }).map((a) => a.getAttribute('href'))
+    expect(caseStudyHrefs).toEqual(['/work/payroll-studio', '/work/inventory-management'])
+    fireEvent.click(within(grid).getAllByRole('button', { name: /talk to us/i })[0])
+    expect(screen.getByTestId('probe')).toHaveTextContent('open|Product enquiry: Searchex')
   })
 
   it('carousel cycles through the three Uniun pillars', async () => {

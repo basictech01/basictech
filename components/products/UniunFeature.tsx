@@ -58,7 +58,7 @@ export const UniunFeature: React.FC = () => {
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-3 mb-2">
               <span className="text-brand-blue font-mono text-[10px] tracking-wider uppercase">
-                Productivity · Our first product
+                Data Layer · Our first product
               </span>
               <span
                 className={`text-[10px] font-medium uppercase tracking-wide px-2 py-1 rounded-full border ${STATUS_STYLES.live}`}
@@ -70,16 +70,16 @@ export const UniunFeature: React.FC = () => {
               Uniun
             </h3>
             <p className="text-base sm:text-lg text-brand-blue/90 font-medium mt-1">
-              Your decentralized second brain.
+              The data layer for AI-first companies.
             </p>
           </div>
         </div>
 
         <p className="text-sm sm:text-base text-slate-600 font-light leading-relaxed mt-6 max-w-3xl">
-          Uniun is a note-taking app built on Nostr. A note is the atom — the same note
-          becomes a feed post, a thread, a node in your graph, a channel message, an
-          encrypted DM, or context for your on-device AI. No company sits between you and
-          your data; your identity is a keypair only you control.
+          Uniun helps organisations rethink how to become AI-first by taking hold of their data layer.
+          It brings the power of a knowledge graph to your company: internal communication — a Slack-like
+          workspace evolving towards a Telegram-style experience — feeds a graph that humans and AI agents
+          work on together. Built on Nostr, so no vendor sits between you and your data.
         </p>
 
         {/* Principles */}

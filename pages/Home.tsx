@@ -4,8 +4,9 @@ import { Philosophy } from '../components/Philosophy';
 import { Services } from '../components/Services';
 import { Differentiation } from '../components/Differentiation';
 import { Process } from '../components/Process';
+import { Regions } from '../components/Regions';
+import { ProductsSection } from '../components/ProductsSection';
 import { AISection } from '../components/AISection';
-import { TechStack } from '../components/TechStack';
 import { Seo } from '../components/Seo';
 import { useContact } from '../components/layout/ContactContext';
 
@@ -14,8 +15,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Seo
-        title="Basic Tech | AI-Powered Software Development for Startups & Businesses"
-        description="Basic Tech builds web apps, mobile apps, backend systems, and AI-powered products for startups and growing businesses. Elite engineers, AI-driven workflows."
+        title="Basic Tech | FDE-Led AI Engineering Company"
+        description="Basic Tech is an FDE-led AI engineering company. Our forward-deployed engineers embed with your team, understand your operations, build custom AI solutions, ship them to production, and measure the business impact — across India and Europe."
         canonical="https://basictech.in/"
       />
       <Hero onStartProject={open} />
@@ -23,8 +24,9 @@ const Home: React.FC = () => {
       <Services />
       <Differentiation />
       <Process />
+      <Regions />
+      <ProductsSection />
       <AISection />
-      <TechStack />
     </>
   );
 };

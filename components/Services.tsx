@@ -10,7 +10,12 @@ export const Services: React.FC = () => {
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28 bg-white relative">
       <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <Reveal width="100%">
-          <h3 className="text-xs sm:text-sm font-semibold tracking-widest text-brand-blue uppercase mb-8 sm:mb-10 md:mb-12 leading-none">What We Do</h3>
+          <h3 className="text-xs sm:text-sm font-semibold tracking-widest text-brand-blue uppercase mb-4 leading-none">Your Forward-Deployed Team</h3>
+        </Reveal>
+        <Reveal width="100%" delay={0.35}>
+          <p className="text-lg sm:text-xl text-slate-600 font-light leading-relaxed max-w-2xl mb-8 sm:mb-10 md:mb-12">
+            Not a dev shop. A full product squad that works inside your company — from the boardroom to the codebase.
+          </p>
         </Reveal>
 
         <div className="flex flex-col">
