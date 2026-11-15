@@ -25,7 +25,7 @@ const UNIUN_POINTS = [
 
 export const ProductsSection: React.FC = () => {
   return (
-    <section className="py-24 sm:py-28 md:py-32 bg-white relative">
+    <section className="py-24 sm:py-28 md:py-32 bg-slate-50 relative">
       <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <div className="max-w-3xl mb-16">
           <Reveal>
