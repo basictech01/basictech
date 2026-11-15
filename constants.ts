@@ -1,56 +1,61 @@
 import { ServiceItem, PillarItem, ProcessStep, Project } from "./types";
 
 export const SERVICES: ServiceItem[] = [
-  { title: "Web Applications", description: "Scalable, React-based web application development built for performance and long-term maintainability." },
-  { title: "Mobile Apps", description: "High-performance mobile app development with native feel and cross-platform efficiency." },
-  { title: "Backend Systems", description: "Robust backend development services with secure APIs, microservices, and scalable architectures." },
-  { title: "AI Integration", description: "AI-powered software development including LLM integration, vector databases, and intelligent automation." },
-  { title: "MVPs for Startups", description: "MVP development for startups — from idea to market-ready product in weeks, not months." }
+  { title: "Product Managers", description: "Sit with your leadership and your end customers to decide what is actually worth building — and what isn't." },
+  { title: "Business Analysts", description: "Map your workflows, data, and economics so every feature is tied to a measurable business outcome." },
+  { title: "Forward-Deployed Engineers", description: "Senior engineers embedded in your team, shipping production software against your real problems — not a spec sheet." },
+  { title: "AI & Data Engineers", description: "Turn your data layer into an AI advantage — agents, LLM workflows, and knowledge graphs grounded in how your business runs." },
+  { title: "Design & Delivery", description: "Interfaces your customers understand and a delivery rhythm your stakeholders can trust, from discovery to support." }
 ];
 
 export const PILLARS: PillarItem[] = [
   {
-    title: "Elite Engineers",
-    subtitle: "Small teams. Deep thinking. Engineers who understand systems, not just frameworks.",
-    icon: "Brain"
+    title: "Customer First",
+    subtitle: "We interview your end customers ourselves. Software is shaped by the people who use it, not by assumptions in a brief.",
+    icon: "Users"
   },
   {
-    title: "AI-Powered Execution",
-    subtitle: "AI-assisted development workflows reduce repetition and accelerate delivery without compromising quality.",
-    icon: "Bot"
+    title: "Works Like Your Employee",
+    subtitle: "Our forward-deployed team joins your standups, your Slack, and your goals. Embedded, not outsourced.",
+    icon: "Handshake"
   },
   {
-    title: "Engineering Fundamentals",
-    subtitle: "Clean, maintainable code. Scalable systems. Software built to last.",
-    icon: "Settings"
+    title: "Give Us the Responsibility",
+    subtitle: "Hand us the problem, not a ticket list. We own the outcome end to end — from discovery to production and beyond.",
+    icon: "ShieldCheck"
   }
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "01",
-    title: "Understand the Problem",
-    description: "We don't write a single line of code until we fully understand the business problem and its real-world impact."
+    title: "Embed with You",
+    description: "Our consultants — engineering, product and business analysis — join your team and work like your own employees. They bring hands-on experience from the products we have built and run in production."
   },
   {
     number: "02",
-    title: "Design the System",
-    description: "Architecture first. Data flows, API contracts, and component hierarchies are mapped before execution."
+    title: "Understand Your Operations",
+    description: "We sit with your teams and interview your end customers to learn how the business actually runs, where time goes, and where money leaks."
   },
   {
     number: "03",
-    title: "Build with AI Leverage",
-    description: "AI tooling accelerates scaffolding so engineers focus on complex logic and product decisions."
+    title: "Identify Opportunities",
+    description: "We find the highest-impact problems AI can solve for you — drawing on our proven work in search, conversational AI, demand forecasting, payroll and inventory."
   },
   {
     number: "04",
-    title: "Test & Refine",
-    description: "Automated testing pipelines and rigorous reviews ensure stable, production-ready software."
+    title: "Build Custom AI Solutions",
+    description: "Built for your data, your workflows, and your customers, on foundations already proven in production — so you get to value faster and with less risk."
   },
   {
     number: "05",
-    title: "Ship & Support",
-    description: "Reliable deployment pipelines, monitoring, and long-term support keep systems healthy at scale."
+    title: "Integrate into Production",
+    description: "We ship into your real systems and daily workflows, with the reliability, security, and support production demands."
+  },
+  {
+    number: "06",
+    title: "Measure Business Impact",
+    description: "Revenue, clicks, hours saved, errors avoided — we track the numbers that matter and keep improving until they move."
   }
 ];
 

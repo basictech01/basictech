@@ -46,15 +46,15 @@ export const AISection: React.FC = () => {
         <div className="max-w-5xl mx-auto text-center">
           <Reveal width="100%">
             <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-semibold text-slate-900 mb-12 md:mb-16 tracking-tight leading-tight">
-              AI is not a feature. <br />
-              It's part of our workflow.
+              We don't provide a tech solution. <br />
+              We become your AI solution.
             </h2>
           </Reveal>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 items-start">
-             <Feature title="Faster Iteration" text="Prototyping at the speed of thought." delay={0.2} />
-             <Feature title="Better Testing" text="Edge cases covered before deployment." delay={0.4} />
-             <Feature title="Leaner Teams" text="Senior-level output from small squads." delay={0.6} />
+             <Feature title="Embedded, Not Outsourced" text="A team that works like your own employees." delay={0.2} />
+             <Feature title="Accountable End to End" text="Give us the responsibility. We own the outcome." delay={0.4} />
+             <Feature title="Smarter Every Engagement" text="Learnings from the field become products for all." delay={0.6} />
           </div>
         </div>
       </div>
